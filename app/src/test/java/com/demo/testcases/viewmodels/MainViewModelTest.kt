@@ -48,6 +48,7 @@ class MainViewModelTest {
 
     }
 
+
     @Test
     fun test_GetProducts_expectedError() = runTest{
         Mockito.`when`(repository.getProducts()).thenReturn(NetworkResult.Error("Something Went Wrong"))
